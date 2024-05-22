@@ -1,3 +1,4 @@
+"use client"
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -138,6 +139,7 @@ function Navbar() {
               </Button>
               <Button
                 // key={page}
+               
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
@@ -145,6 +147,7 @@ function Navbar() {
               </Button>
               <Button
                 // key={page}
+                href='/login'
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >

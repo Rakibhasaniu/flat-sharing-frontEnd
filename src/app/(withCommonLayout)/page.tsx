@@ -7,8 +7,7 @@ import Footer from '@/components/Shared/Footer/Footer';
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
-      <Footer />
+      <h1>Home page</h1>
 
     </div>
   );
