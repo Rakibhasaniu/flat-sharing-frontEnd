@@ -132,6 +132,7 @@ function Navbar() {
             
               <Button
                 // key={page}
+                href='/'
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
@@ -139,7 +140,7 @@ function Navbar() {
               </Button>
               <Button
                 // key={page}
-               
+               href='/about-us'
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >

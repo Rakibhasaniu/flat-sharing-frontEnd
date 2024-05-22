@@ -68,7 +68,7 @@ const RegisterPage = () => {
 //     }
 //   };
 const handleRegister = () => {
-    
+
 }
 
   return (
