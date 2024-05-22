@@ -1,11 +1,14 @@
+"use client"
 import React from 'react';
 import Button from '@mui/material/Button';
+import Navbar from '@/components/Shared/Navbar/Navbar';
+import Footer from '@/components/Shared/Footer/Footer';
 
 const HomePage = () => {
   return (
     <div>
-      <h1>Home Page</h1>
-      <Button variant="contained">Contained</Button>
+      <Navbar />
+      <Footer />
 
     </div>
   );
