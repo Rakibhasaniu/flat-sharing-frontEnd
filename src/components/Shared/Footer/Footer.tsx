@@ -1,59 +1,72 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
-import Image from "next/image";
-import Link from "next/link";
-// import facebookIcon from "@/assets/landing_page/facebook.png";
-// import instagramIcon from "@/assets/landing_page/instagram.png";
-// import twitterIcon from "@/assets/landing_page/twitter.png";
-// import linkedIcon from "@/assets/landing_page/linkedin.png";
+// components/Footer.tsx
+import React from 'react';
+import { Box, Container, Typography, IconButton } from '@mui/material';
+import { Email, Phone, Facebook, Twitter, Instagram } from '@mui/icons-material';
+import Image from 'next/image';
+import logo from '@/assets/logo.jpg';
+import Link from 'next/link';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <Box bgcolor="rgb(17, 26, 34)" py={5}>
-      <Container>
-        <Stack direction="row" gap={4} justifyContent="center">
-          <Typography color="#fff" component={Link} href="/consultation">
-            Consultation
-          </Typography>
-          <Typography color="#fff">Health Plans</Typography>
-          <Typography color="#fff">Medicine</Typography>
-          <Typography color="#fff">Diagnostics</Typography>
-          <Typography color="#fff">NGOs</Typography>
-        </Stack>
-
-        <Stack direction="row" gap={2} justifyContent="center" py={3}>
-          <Image src="" width={30} height={30} alt="facebook" />
-          <Image src="" width={30} height={30} alt="facebook" />
-          <Image src="" width={30} height={30} alt="facebook" />
-          <Image src="" width={30} height={30} alt="facebook" />
-        </Stack>
-        <div className="border-b-[1px] border-dashed"></div>
-        <Stack
-          direction="row"
-          gap={2}
-          justifyContent="space-between"
-          alignItems="center"
-          py={3}
+    <Box
+      sx={{
+        backgroundColor: 'black',
+        color: 'common.white',
+        padding: 4,
+        mt: 8,
+        textAlign: 'center',
+      }}
+    >
+      <Container maxWidth="lg">
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            mb: 4,
+          }}
         >
-          <Typography component="p" color="white">
-            &copy;2024 Flat Sharing App. All Rights Reserved.
+          <Image
+            src={logo}
+            alt="Logo"
+            width={100}
+            height={50}
+            
+          />
+          <Box>
+            <Typography sx={{color: "white"}}>
+                info@FlatFlock.com
+            </Typography>
+            <Typography sx={{color: "white"}}>
+                +8801731635367
+            </Typography>
+            <Box sx={{ mt: 2 }}>
+              <IconButton href="https://www.facebook.com/profile.php?id=100010404703241" target="_blank" color="inherit">
+                <Facebook />
+              </IconButton>
+              <IconButton href="https://x.com/rakibhasan_12" target="_blank" color="inherit">
+                <Twitter />
+              </IconButton>
+              <IconButton href="https://www.instagram.com/raaaakkkkkiiiibbbb/" target="_blank" color="inherit">
+                <Instagram />
+              </IconButton>
+            </Box>
+          </Box>
+        </Box>
+        <Box sx={{ borderTop: 1, borderColor: 'grey.800', pt: 3 }}>
+          <Typography variant="body2" component="div">
+            &copy; {new Date().getFullYear()} FlatFlock. All rights reserved.
           </Typography>
-          <Typography
-            variant="h4"
-            component={Link}
-            href="/"
-            fontWeight={600}
-            color="white"
-          >
-            Flat
-            <Box component="span" color="primary.main">
-              Sharing
-            </Box>{" "}
-            Service
-          </Typography>
-          <Typography component="p" color="white">
-            Privacy Policy! Terms & Conditions
-          </Typography>
-        </Stack>
+          <Box sx={{ display: 'flex', justifyContent: 'center', mt: 1, gap: 2 }}>
+            <Link href="/terms" color="inherit">
+              Terms of Use
+            </Link>
+            <Link href="/terms" >
+              Privacy Policy
+            </Link>
+          </Box>
+        </Box>
       </Container>
     </Box>
   );

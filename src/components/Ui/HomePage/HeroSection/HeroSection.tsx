@@ -1,128 +1,105 @@
-import { Box, Button, Container, Typography } from "@mui/material";
-import Image from "next/image";
-// import assets from "@/assets";
+import { Box, Typography, Button } from '@mui/material';
+import Image from 'next/image';
+import dhakaImage from '@/assets/ban1.png';
+import play from '@/assets/play.png';
+import Link from 'next/link';
 
-const HeroSection = () => {
+const PopularLocation = () => {
   return (
-    <Container
+    <Box
       sx={{
-        display: "flex",
-        direction: "row",
-        my: 16,
+        display: 'flex',
+        flexDirection: { xs: 'column-reverse', md: 'row' },
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        p: 4,
+        bgcolor: 'background.paper',
+        boxShadow: 3,
+        borderRadius: 2,
+        margin: 'auto',
+        mt: 5
       }}
     >
-      <Box sx={{ flex: 1, position: "relative" }}>
-        <Box
-          sx={{
-            position: "absolute",
-            width: "700px",
-            left: "-90px",
-            top: "-120px",
-          }}
-        >
-          {/* <Image src={assets.svgs.grid} alt="doctor1" /> */}
-        </Box>
-        <Typography variant="h2" component="h1" fontWeight={600}>
-          Healthier Hearts
+      <Box sx={{ flex: 1, pr: { md: 3 }, mb: { xs: 3, md: 0 } }}>
+        <Typography variant='h4' component="h2" sx={{ fontWeight: 600}} gutterBottom>
+        Zero Brokerage
+Flatmates Like Friends
         </Typography>
-        <Typography variant="h2" component="h1" fontWeight={600}>
-          Come From
+        <Typography variant="body1" paragraph>
+        Wrong Flatmates, No More!
         </Typography>
-        <Typography
-          variant="h2"
-          component="h1"
-          fontWeight={600}
-          color="primary.main"
-        >
-          Preventive Care
-        </Typography>
-        <Typography sx={{ my: 4 }}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit eum
-          iusto consequatur eius, doloribus nesciunt facere aliquid eveniet et.
-          Rerum maiores saepe cupiditate repellat recusandae atque sed. Saepe,
-          vitae id?
-        </Typography>
-        <Box sx={{ display: "flex", gap: 2 }}>
-          <Button>Make appointment</Button>
-          <Button variant="outlined">Contact us</Button>
-        </Box>
-      </Box>
+        
+        <Box sx={{ display: 'flex',alignItems: 'center' }}>
 
-      <Box
-        sx={{
-          p: 1,
-          flex: 1,
-          display: "flex",
-          justifyContent: "center",
-          position: "relative",
-          mt: 0,
-        }}
-      >
-        {/* <Box
-          sx={{
-            position: "absolute",
-            left: "200px",
-            top: "-30px",
-          }}
-        >
-          <Image src={assets.svgs.arrow} width={100} height={100} alt="arrow" />
-        </Box> */}
-        <Box
-          sx={{
-            display: "flex",
-            gap: 2,
-          }}
-        >
-          {/* <Box mt={4}>
-            <Image
-              src={assets.images.doctor1}
-              width={240}
-              height={380}
-              alt="doctor1"
-            />
-          </Box> */}
-          {/* <Box>
-            <Image
-              src={assets.images.doctor2}
-              width={240}
-              height={350}
-              alt="doctor2"
-            />
-          </Box> */}
+          <Image
+          src={play}
+          alt='palyStore'
+          width={200}
+          height={200}
+          /> 
+          <Typography sx={{p:4}} variant="body1" paragraph>
+        Comming Soon!
+        </Typography>
         </Box>
-        {/* <Box
-          sx={{
-            position: "absolute",
-            top: "220px",
-            left: "150px",
-          }}
-        >
-          <Image
-            src={assets.images.doctor3}
-            width={240}
-            height={240}
-            alt="doctor3"
-          />
-        </Box> */}
-        {/* <Box
-          sx={{
-            position: "absolute",
-            bottom: "-50px",
-            right: 0,
-            zIndex: "-1",
-          }}
-        >
-          <Image
-            src={assets.images.stethoscope}
-            width={180}
-            height={180}
-            alt="doctor3"
-          />
-        </Box> */}
+        <Box>
+        <Button component={Link} variant="contained" color="primary" href="/all-flats">All Flats
+        </Button>
+      
+        </Box>
+        
+
+       
       </Box>
-      <Button href="/post-flat" >Share Your Flat</Button>
-    </Container>
+      <Box sx={{ flex: 1, width: '100%', height: 'auto' }}>
+        <Image
+          src={dhakaImage}
+          alt="London"
+          width={500}
+          height={300}
+          layout="responsive"
+          style={{ borderRadius: 8 }}
+        />
+      </Box>
+     
+    </Box>
   );
 };
 
-export default HeroSection;
+export default PopularLocation;
+
+// import { Box, Container, Typography, Button } from "@mui/material";
+// import HeroForm from "./HeroForm";
+
+// const HeroSection = async () => {
+
+
+//     return (
+//         <Container sx={{ textAlign: "center", my: 5 }}>
+//             <Box component="div" sx={{
+//                 maxWidth: "300px",
+//                 backgroundColor: "#ffe0f2",
+//                 padding: "5px",
+//                 borderRadius: "20px",
+//                 margin: "0 auto"
+//             }}>
+//                 <Typography sx={{
+//                     fontWeight: 600,
+//                     fontSize: 14
+//                 }}>Trusted and loved by million users</Typography>
+//             </Box>
+//             <Typography variant="h3" component="h1" sx={{
+//                 mt: 8,
+//                 mb: 4,
+//                 fontWeight: 600
+//             }}>Find Your Perfect Flat-mate Today!</Typography>
+//             <Typography sx={{
+//                 color: "gray"
+//             }}>Share your room</Typography>
+//             <HeroForm />
+            
+//         </Container>
+//     );
+// };
+
+// export default HeroSection;
+

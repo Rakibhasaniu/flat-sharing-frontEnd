@@ -1,19 +1,18 @@
-"use client"
-import React from 'react';
-import Button from '@mui/material/Button';
-import Navbar from '@/components/Shared/Navbar/Navbar';
-import Footer from '@/components/Shared/Footer/Footer';
-import HeroSection from '@/components/Ui/HomePage/HeroSection/HeroSection';
-import AllFlats from '@/components/Ui/HomePage/HeroSection/AllFlats';
+import FlatListSection from "@/components/UI/HomePage/FlatListSection/FlatListSection";
+import GetStarted from "@/components/UI/HomePage/GetStartSection/GetStartSection";
+import HeroSection from "@/components/UI/HomePage/HeroSection/HeroSection";
+import PopularLocation from "@/components/UI/HomePage/PopularLocation/PopularLocation";
 
-const HomePage = () => {
-  return (
-    <>
-      <HeroSection />
-      <AllFlats />
+const HomePage = async () => {
 
-    </>
-  );
+    return (
+        <>
+            <HeroSection />
+            <FlatListSection/>
+            <PopularLocation/>
+            <GetStarted/>
+        </>
+    );
 };
 
 export default HomePage;
