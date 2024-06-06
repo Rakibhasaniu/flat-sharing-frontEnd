@@ -5,7 +5,7 @@ import drawerOptions from "@/utils/drawerOptions";
 import { Box, Button, Divider, List, Stack } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpg";
 import SidebarItems from "./SidebarItems";
 import { getUserInfo } from '@/services/authServices';
 import { useRouter } from "next/navigation";
@@ -30,7 +30,7 @@ const Sidebar = ({ handleDrawerClose }: any) => {
         <Box sx={{ p: 2 }}>
             <Stack direction="row" spacing={1} alignItems="center" component={Link} href="/">
                 <Image src={logo} height={40} width={40} alt='logo' />
-                <Box sx={{ fontWeight: 600 }}>Flat<Box component="span" sx={{ color: "primary.main" }}>FInder</Box></Box>
+                <Box sx={{ fontWeight: 600 }}>Flat<Box component="span" sx={{ color: "primary.main" }}>Folk</Box></Box>
             </Stack>
 
 
@@ -45,7 +45,7 @@ const Sidebar = ({ handleDrawerClose }: any) => {
                     <SidebarItems key={index} item={item} handleDrawerClose={handleDrawerClose} />
                 ))}
                 <Stack direction="row" justifyContent="center">
-                    <Button onClick={() => handleLogout()} size="small" fullWidth sx={{ backgroundColor: "#f70733", maxWidth: "200px", margin: "10px auto" }}>Logout</Button>
+                    <Button onClick={() => handleLogout()} size="small" fullWidth sx={{ backgroundColor: "#3AA4F3", maxWidth: "200px", margin: "10px auto" }}>Logout</Button>
                 </Stack>
             </List>
         </Box>

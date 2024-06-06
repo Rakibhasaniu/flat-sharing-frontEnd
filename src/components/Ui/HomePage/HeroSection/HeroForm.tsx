@@ -52,12 +52,12 @@ const HeroForm = () => {
                 </Grid>
             </Grid>
         </FlatForm>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
+        {/* <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Box sx={{width: 800}}>
                 
             <Image src={bannerImage} alt="logo" height={500} width={800} layout="responsive"/>
             </Box>
-        </Box>
+        </Box> */}
         <Box sx={{ maxWidth: 400, margin: "0 auto" }}>
             <Button component={Link} href={`/dashboard/${user?.role ? user?.role : "user"}/flat-post`} fullWidth size="small">Share Your Flat</Button>
         </Box>

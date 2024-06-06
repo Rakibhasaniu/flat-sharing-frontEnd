@@ -27,7 +27,7 @@ const AuthButton = () => {
                     }}>
                         <Typography component={Link} href="/dashboard">Profile</Typography>
                         <Button size="small" onClick={handleLogout} sx={{
-                            backgroundColor: "#fc7676",
+                            backgroundColor: "#FF7E38",
                             p: "4px 10px",
                             borderRadius: "5px",
                             color: "white",

@@ -6,7 +6,7 @@ const GetStarted = () => {
 
     return (
         <Container sx={{
-            my: 2, backgroundColor: '#4d5639',
+            my: 2, backgroundColor: '#A3CD3F',
             color: 'white',
             padding: { xs: 4, md: 8 },
             borderRadius: 2,

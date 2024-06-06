@@ -44,7 +44,6 @@ Flatmates Like Friends
         <Box>
         <Button component={Link} variant="contained" color="primary" href="/all-flats">All Flats
         </Button>
-      
         </Box>
         
 

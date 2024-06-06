@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FieldValues } from 'react-hook-form';
 import { z } from 'zod';
-import logo from './../../../assets/logo.png';
+import logo from './../../../assets/logo.jpg';
 import loginUser from '@/services/actions/loginUser';
 import { storeUser } from '@/services/authServices';
 import { useRouter } from 'next/navigation';
