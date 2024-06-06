@@ -1,20 +1,18 @@
-# Flat Finder 
-## Client
 
-### Live Url: https://flat-finder-blue.vercel.app/
+### Live Url: https://flatrent.vercel.app/
 
 - ### Application Summary
-- ##### Flat Finder is a web application built with Next.js and TypeScript that allows users to find flats, request flat shares, and post their own flats for sharing. The application has two user roles: User and Admin..
+- ##### Flat Flock is a web application built with Next.js and TypeScript that allows users to find flats, request flat shares, and post their own flats for sharing. The application has two user roles: User and Admin..
 ##### Credentials
-- ##### Admin1
-- email: admin@gmail.com
+- ##### Admin
+- email: rakib@gmail.com
 - password: 12345
 - ##### User1
 - email: user1@gmail.com
-- password: 12345
+- password: 123456789
 - ##### User2
 - email: user2@gmail.com
-- password: 12345
+- password: 123456
 
   
 ### 2. User Roles
@@ -60,36 +58,8 @@
 - API Calls: Axios
 - Data Validation: Zod
 - Material UI Components: @mui/material
-### 5. Dependencies (package.json)
-##### Frontend Dependencies
-- @emotion/cache
-- @emotion/react
-- @emotion/styled
-- @hookform/resolvers
-- @mui/icons-material
-- @mui/material
-- @mui/material-nextjs
-- @mui/x-data-grid
-- axios
-- jwt-decode
-- react
-- react-dom
-- react-hook-form
-- react-redux
-- sharp
-- sonner
-- swiper
-- zod
-##### Development Dependencies
-- @types/node
-- @types/react
-- @types/react-dom
-- eslint
-- eslint-config-next
-- postcss
-- tailwindcss
-- typescript
-### 6.  Additional Notes
+
+### 5.  Additional Notes
 
 This documentation provides a general overview of the Flat Finder application. Specific details regarding API interaction, user interface elements, and code implementation would require reviewing the application's source code.
 
