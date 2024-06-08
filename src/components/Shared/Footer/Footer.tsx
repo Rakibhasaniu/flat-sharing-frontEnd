@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           />
           <Box>
             <Typography sx={{color: "white"}}>
-                info@FlatFlock.com
+                info@flatfolk.com
             </Typography>
             <Typography sx={{color: "white"}}>
                 +8801731635367

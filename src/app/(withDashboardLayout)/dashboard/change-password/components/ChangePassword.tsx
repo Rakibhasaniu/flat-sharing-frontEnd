@@ -61,12 +61,12 @@ const ChangePassword = () => {
                     <Grid item xs={12} sm={12} md={6}>
                     <FlatInput name="password" label="New Password" placeholder="New Password" type="password" fullWidth />
                     </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
-                    <FlatInput name="confirmPassword" label="Confirm Password" placeholder="Confirm Password" type="password" fullWidth />
+                    <Grid item xs={12} sm={12} md={6}  >
+                    <FlatInput  name="confirmPassword" label="Confirm Password" placeholder="Confirm Password" type="password" fullWidth />
                     </Grid>
                     <Grid item xs={12} sm={12} md={12}>
                 
-                    <Button type="submit" disabled={isLoading} fullWidth size="small">{ isLoading ? "Saving..." : "Save Changes"}</Button>
+                    <Button type="submit" disabled={isLoading} fullWidth size="small">{ isLoading ? "Changing Password..." : "Change Password"}</Button>
                 
                 </Grid>
                 </Grid>

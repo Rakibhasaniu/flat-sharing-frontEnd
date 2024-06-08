@@ -24,7 +24,7 @@ const FlatListSection = async () => {
         ))}
       </Grid>
       <Box component="div" sx={{display: "flex", justifyContent: "center"}}>
-      <Button component={Link} href="/all-flats" variant="outlined" size="small" sx={{color: "black"}}>See More</Button>
+      <Button component={Link} href="/all-flats" variant="contained" size="small" sx={{color: "white"}}>See More</Button>
       </Box>
     </Container>
   );
