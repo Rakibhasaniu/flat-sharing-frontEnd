@@ -6,7 +6,7 @@
 ##### Credentials
 - ##### Admin
 - email: rakib@gmail.com
-- password: 12345
+- password: 123456
 - ##### User1
 - email: user1@gmail.com
 - password: 123456789
@@ -16,8 +16,7 @@
 
   
 ### 2. User Roles
- #####  User:
-
+  User:
 - Search for flats based on various criteria.
 - Request to share an existing flat post.
 - Post their own flat for sharing.
@@ -25,7 +24,6 @@
 - Cannot request to share their own flat.
 - Update their email address and password.
 - View their own flat posts, requests sent to other's flats, and total requests received on their own flats.
-- 
 #####  Admin:
 
 - Manage all users (view, edit, delete).
@@ -37,15 +35,14 @@
 - - Total number of flat share requests.
 
 ### 3. Features
-
-##### User Features:
+User Features:
 - Flat Search: Allows users to search for flats based on various criteria.
 - Flat Share Request: Users can request to share an existing flat post.
 - Post a Flat: Users can post their own flats for sharing with details and images.
 - Flat Management: Users can manage their own flat posts (update, delete).
 - User Account Management: Update email address and password.
 - User Dashboard: View their own flat posts, requests sent to other's flats, and total requests received on their own flats.
-##### Admin Features:
+# Admin Features:
 - User Management: View, edit, and delete user accounts.
 - Flat Management: Edit and delete user flat posts.
 - Post a Flat: Admins can post their own flats for sharing.
@@ -65,7 +62,7 @@ This documentation provides a general overview of the Flat Finder application. S
 
 - ### Local Setup Instructions
 - Clone the repository
-  `https://github.com/jubayer44/flat-finder.git`
+  `https://github.com/Rakibhasaniu/flat-sharing-frontEnd.git`
 - Navigate to the project directory
   `cd your-folder`
 - Install dependencies
@@ -86,4 +83,3 @@ NEXT_PUBLIC_IMAGE_UPLOAD_URL = your cloudinary photo url
 npm run build
 npm start
 ```
-##### Thank You
