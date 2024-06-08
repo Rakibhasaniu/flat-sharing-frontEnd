@@ -1,69 +1,89 @@
-# **Flat Sharing Server**
 
-Welcome to the **Flat Sharing Server** project! This repository contains the server-side code for our Flat Sharing Server. This README file provides guidelines on how to build and contribute to the project as a team. Please make sure to follow these instructions to maintain a consistent and efficient development process.
+### Live Url: https://flatrent.vercel.app/
 
-## **Getting Started**
+- ### Application Summary
+- ##### Flat Flock is a web application built with Next.js and TypeScript that allows users to find flats, request flat shares, and post their own flats for sharing. The application has two user roles: User and Admin..
+##### Credentials
+- ##### Admin
+- email: rakib@gmail.com
+- password: 12345
+- ##### User1
+- email: user1@gmail.com
+- password: 123456789
+- ##### User2
+- email: user2@gmail.com
+- password: 123456
 
-1. **Clone the Repository:**
-    
-2. **Navigate to the Project Directory:**
-    
-3. Please update the filename from `.env.example` to `.env`
-4. **Install Dependencies:**
-    
-    ```bash
-    yarn install
-    ```
-    
-5. **Start the Server:**
-    
-    ```bash
-    yarn dev
-    ```
-    
-    The server will be running at **`http://localhost:3000`** .
-    
+  
+### 2. User Roles
+ #####  User:
 
-## **Contributing Guidelines**
+- Search for flats based on various criteria.
+- Request to share an existing flat post.
+- Post their own flat for sharing.
+- Manage their own flat posts (update, delete).
+- Cannot request to share their own flat.
+- Update their email address and password.
+- View their own flat posts, requests sent to other's flats, and total requests received on their own flats.
+- 
+#####  Admin:
 
-To contribute to the project, follow these guidelines:
+- Manage all users (view, edit, delete).
+- Edit and delete user flat posts.
+- Post their own flat for sharing.
+- View dashboards with:
+- - Total number of users.
+- - Total number of flat posts.
+- - Total number of flat share requests.
 
-1. **Create a Feature Branch:**
-Before starting work on a new feature, create a feature branch:
-    
-    ```bash
-    git checkout -b feature/your-feature-name
-    ```
-    
-2. **Write Code:**
-Implement the feature or fix the bug on your feature branch.
-3. **Commit Changes:**
-Commit your changes with a meaningful commit message:
-    
-    ```bash
-    git commit -m "Add your commit message here"
-    ```
-    
-4. **Push Changes:**
-Push your changes to your feature branch:
-    
-    ```bash
-    git push origin feature/your-feature-name
-    ```
-    
-5. **Create a Pull Request (PR):**
-Create a pull request from your feature branch to the **`development`** branch on GitHub. Ensure the PR title and description are descriptive.
-6. **Code Review:**
-Your code will be reviewed by other team members. Address any feedback and make necessary changes.
+### 3. Features
 
-## **Additional Notes**
+##### User Features:
+- Flat Search: Allows users to search for flats based on various criteria.
+- Flat Share Request: Users can request to share an existing flat post.
+- Post a Flat: Users can post their own flats for sharing with details and images.
+- Flat Management: Users can manage their own flat posts (update, delete).
+- User Account Management: Update email address and password.
+- User Dashboard: View their own flat posts, requests sent to other's flats, and total requests received on their own flats.
+##### Admin Features:
+- User Management: View, edit, and delete user accounts.
+- Flat Management: Edit and delete user flat posts.
+- Post a Flat: Admins can post their own flats for sharing.
+- Admin Dashboard: View total number of users, flat posts, and flat share requests.
 
-- **Main Branch:**
-The **`main`** branch is reserved for stable releases. Do not directly push to the main branch.
-- **Issues and Bug Tracking:**
-Use the GitHub Issues tab to report bugs, suggest features, or discuss enhancements.
-- **Coding Standards:**
-Follow the coding standards and conventions established by the team. Ensure your code is well-documented.
+### 4. Technology Stack
+- rontend: Next.js, React, TypeScript
+- Styling: Metarial UI
+- State Management: Redux Toolkit
+- API Calls: Axios
+- Data Validation: Zod
+- Material UI Components: @mui/material
 
+### 5.  Additional Notes
 
-#### Postman API Documentation: https://documenter.getpostman.com/view/26694209/2s9YynmjXH
+This documentation provides a general overview of the Flat Finder application. Specific details regarding API interaction, user interface elements, and code implementation would require reviewing the application's source code.
+
+- ### Local Setup Instructions
+- Clone the repository
+  `https://github.com/jubayer44/flat-finder.git`
+- Navigate to the project directory
+  `cd your-folder`
+- Install dependencies
+  `npm install`
+- Create a`.env` file in the root of the project and set the following environment variables
+
+```
+NEXT_PUBLIC_URL="http://localhost:5000/api"
+NEXT_PUBLIC_IMAGE_UPLOAD_URL = your cloudinary photo url
+```
+
+##### Running the application
+
+- Development Mode
+  `npm run dev`
+- Production Mode
+```
+npm run build
+npm start
+```
+##### Thank You
