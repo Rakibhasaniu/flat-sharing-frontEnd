@@ -14,6 +14,8 @@ import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
 import { useState } from 'react';
 import { useGetMyProfileQuery } from '@/redux/api/userApi';
+import Credintials from '../Credintials/Credintials';
+import SimplePopper from '../Credintials/Credintials';
 
 
 const validationSchema = z.object({
@@ -134,6 +136,11 @@ const LoginComponent = () => {
                 <Link href="/register" color="blue">
                   Register
                 </Link>
+                {/* <NestedModal /> */}
+                <div>
+                  <SimplePopper />
+                {/* <Credintials /> */}
+                </div>
               </Typography>
             </Box>
           </FlatForm>
